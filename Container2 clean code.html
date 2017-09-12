@@ -31,6 +31,9 @@
 			#header{
 				border-style:solid dashed;
 				border-color:blue;
+				position:fixed;
+				width:100%;
+				z-index:100;
 			}
 			#sidebar{
 				display: inline-block;
@@ -49,6 +52,7 @@
 				border-style:dashed;
 				border-color:#FA1402;
 				position:relative;
+				
 			}
 			div {
 				-webkit-box-sizing:border-box;
@@ -58,19 +62,22 @@
 				position:absolute;
 				right:-80px;
 				
+				
 			}
 			#sidelinkToTop {
 				position:absolute;
 				left:-80px;
-				
+			}
+			#container{
+				padding-top:150px;
 			}
 		</style>
 	</head>
 	<body>
+			<div id="header" class="box"> <h1>Header</h1></div>
 		<div id="container">
-			
-			<div id="header" class="box"> <h1>Header</h1>
-			</div><div id="sidebar" class="box"><h2>Sidebar</h2>
+		
+			<div id="sidebar" class="box"><h2>Sidebar</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
 			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
@@ -81,7 +88,7 @@
 			accumsan et iusto odio dignissim qui blandit praesent luptatum
 			zzril delenit augue duis dolore te feugait nulla facilisi.
 			</p>
-			<img src=arrow.png id="sidelinkToTop"/>
+			<a href="#"><img src=arrow.png id="sidelinkToTop"/></a>
 			</div>
 			<div id="content" class="box"><h2>Content</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -93,7 +100,7 @@
 			vel illum dolore eu feugiat nulla facilisis at vero eros et
 			accumsan et iusto odio dignissim qui blandit praesent luptatum
 			zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-			<img src=arrow.png id="linkToTop"/>
+			<a href="#"><img src=arrow.png id="linkToTop"/></a>
 			</div>
 			<div id="footer" class="box"><h2>Footer</h2></div>
 
