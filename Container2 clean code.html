@@ -35,23 +35,35 @@
 			#sidebar{
 				display: inline-block;
 				width: 465px;
-				height: 320px;
+				height: 360px;
 				margin-right: 5px;
 				border-style:dashed;
 				border-color:#FA1402;
+				position:relative;
 			}
 			#content{
 				display: inline-block;
 				width: 465px;
-				height: 320px;
+				height: 360px;
 				margin-left: 5px;
 				border-style:dashed;
 				border-color:#FA1402;
+				position:relative;
 			}
 			div {
 				-webkit-box-sizing:border-box;
 			}
-
+			
+			#linkToTop {
+				position:absolute;
+				right:-80px;
+				
+			}
+			#sidelinkToTop {
+				position:absolute;
+				left:-80px;
+				
+			}
 		</style>
 	</head>
 	<body>
@@ -68,7 +80,9 @@
 			vel illum dolore eu feugiat nulla facilisis at vero eros et
 			accumsan et iusto odio dignissim qui blandit praesent luptatum
 			zzril delenit augue duis dolore te feugait nulla facilisi.
-			</p></div>
+			</p>
+			<img src=arrow.png id="sidelinkToTop"/>
+			</div>
 			<div id="content" class="box"><h2>Content</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -78,7 +92,9 @@
 			<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
 			vel illum dolore eu feugiat nulla facilisis at vero eros et
 			accumsan et iusto odio dignissim qui blandit praesent luptatum
-			zzril delenit augue duis dolore te feugait nulla facilisi.</p></div>
+			zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+			<img src=arrow.png id="linkToTop"/>
+			</div>
 			<div id="footer" class="box"><h2>Footer</h2></div>
 
 		</div>
