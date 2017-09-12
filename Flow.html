@@ -14,11 +14,14 @@
 			{
 				margin-right:auto; /*center container with margins left & right set to auto*/
 				margin-left:auto;
-				width:960px;	/*to center an element it must have a fixed width*/
+				width:600px;	/*to center an element it must have a fixed width*/
+				height:400px;
 				background-color:#AA4639;
 				border-radius: 10px;
 				padding: 10px;
 				font-size: 0;	/* remove inline-block spacing*/
+				position:relative;
+				top:100px;
 			}
 			.box{
 				display: inline-block;
@@ -30,16 +33,36 @@
 				border-radius:10px;
 				font-size: 35px;
 			}
-
+			#box1 {
+				position:relative;
+				top:70px;
+				left:180px;
+			}
+			#box2 {
+				position:relative;
+				top:100px;
+				left:-60px;			}
+			
+			#box3 {
+				position:relative;
+				top:-130px;
+				left:180px;
+			}
+			#box4 {
+				position:relative;
+				top:-100px;
+				left:-60px;
+			}
+ 
 		</style>
 	</head>
 	<body>
 		<div id="container">
 			
-			<div class="box"><h2>1</h2></div>
-			<div class="box"><h2>2</h2></div>
-			<div class="box"><h2>3</h2></div>
-			<div class="box"><h2>4</h2></div>
+			<div class="box" id="box1"><h2>1</h2></div>
+			<div class="box" id="box2"><h2>2</h2></div>
+			<div class="box" id="box3"><h2>3</h2></div>
+			<div class="box" id="box4"><h2>4</h2></div>
 
 		</div>
 	</body>
